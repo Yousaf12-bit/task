@@ -1,0 +1,61 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import "tailwindcss";
+
+body {
+  font-family: "Poppins", sans-serif !important;
+}
+
+.slick-dots {
+  bottom: 200px !important;
+  display: flex !important;
+  justify-content: center;
+  gap: 5px !important;
+}
+
+.slick-dots li {
+  width: 15px !important;
+  height: 15px !important;
+}
+
+.slick-dots li button:before {
+  font-size: 12px !important;
+  color: #d9d9d9 !important;
+  opacity: 1 !important;
+}
+
+.slick-dots li.slick-active button:before {
+  color: #fec432 !important;
+  width: 28px !important;
+  opacity: 1 !important;
+}
+
+.slick-dots li button {
+  width: 12px !important;
+  height: 12px !important;
+}
+
+.slick-dots li button:before {
+  content: "" !important;
+  width: 12px !important;
+  height: 12px !important;
+  background-color: #d9d9d9 !important;
+  border-radius: 50px;
+  opacity: 0.4;
+}
+
+.slick-dots li.slick-active button:before {
+  background-color: #fec432 !important;
+  opacity: 1;
+}
+
+@media screen and (max-width: 1024px) {
+  .slick-dots {
+    bottom: 100px !important;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .slick-dots {
+    bottom: 20px !important;
+  }
+}
